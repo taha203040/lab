@@ -7,6 +7,7 @@
     "db:down": "docker compose down -v",
     "db:reset": "tsx src/shared/reset.ts",
     "seed:05": "tsx src/05-normalisation/seed.ts",
+    "seed1:05": "tsx src/05-normalisation/seed1.ts",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {

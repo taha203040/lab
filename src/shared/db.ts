@@ -2,7 +2,7 @@ import { readFileSync } from 'node:fs';
 import { Pool, type PoolConfig } from 'pg';
 
 export const DATABASE_URL =
-  process.env.DATABASE_URL ?? 'postgres://lab:lab@localhost:5433/lab';
+  process.env.DATABASE_URL ?? 'postgres://postgres:0000@localhost:5432/lab';
 
 export function makePool(overrides: PoolConfig = {}): Pool {
   return new Pool({ connectionString: DATABASE_URL, ...overrides });
